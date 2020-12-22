@@ -3,6 +3,7 @@
 #include<cstdlib>
 #include<ctime>
 #include<windows.h>
+#define MAX_CHIPS   100
 
 using namespace std;
 
@@ -27,7 +28,7 @@ int main()
 
     srand(time(0));
 
-    chipsInPile         = (rand() % 100) + 1;
+    chipsInPile         = (rand() % MAX_CHIPS) + 1;
     cout<<"\nGame starts! Brace yourselves!!\n";
     Sleep(1*1000);
     cout<<"\nChips in Pile this time is "<<chipsInPile;
